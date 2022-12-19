@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script defer src="./js/script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container__lg">
+            <div class="menu-icon-wrapper">
+                <div class="menu-icon"></div>
+            </div>
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link navigation__link--active">Мероприятие</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">Товары</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">Клиенты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="user">
+                <div class="user__icon"></div>
+                <p class="user__mail">admin@okguru.com</p>
+                <a href="" class="user__link"><img src="./image/feather_log-out.svg" alt="" class="user__out"></a>
+            </div>
+        </div>
+    </header>
+    <main class="main ">
+        <div class="container">
+            <h1 class="main__title">Создание мероприятия</h1>
+            <form action="#" class="form">
+                <div class="form__wrapper">
+                    <div class="content__wrapper content__wrapper--left">
+                        <label>
+                            <span> Название мероприятия</span>
+                            <input type="text" placeholder="Введите название">
+                        </label>
+                        <label>
+                            <span> Имя ведущего</span>
+                            <input type="text" placeholder="Введите имя">
+                        </label>
+                        <label>
+                            <span>Дата и время начала</span>
+                            <div class="date">
+                                <input type="date">
+                                <input type="time" name="" id="">
+                            </div>
+                        </label>
+                        <label for="">
+                            <span>Ссылка на YouTube трансляцию</span>
+                            <input type="text" placeholder="Вставьте ссылку">
+                        </label>
+                        <label for="">
+                            <span> Ссылка на заглушку</span>
+                            <input type="text" placeholder="Вставьте ссылку">
+                        </label>
+                        <label for="">
+                            <span> Внешняя кнопка(ссылка)</span>
+                            <input type="text" placeholder="Вставьте ссылку">
+                        </label>
+                    </div>
+                    <div class="content__wrapper content__wrapper--right">
+                        <div class="access-event">
+                            <p>Доступ к мероприятию </p>
+                            <label>
+                                <input type="radio" value="password" name="access" checked>
+                                <span class="fake-radio"></span>
+                                По паролям
+                            </label>
+                            <label>
+                                <input type="radio" value="open" name="access">
+                                <span class="fake-radio"></span>
+                                Открытый
+                            </label>
+                        </div>
+                        <label class="checbox-label">
+                            Чат при запуске мероприятия
+                            <input type="checkbox" name="" id="" checked>
+                            <span class="fake-checkbox"></span>
+                        </label>
+                        <label class="checbox-label">
+                            Кликабельные ссылки от<br> пользователей в чате
+                            <input type="checkbox" name="" id="">
+                            <span class="fake-checkbox"></span>
+                        </label>
+                        <label class="checbox-label">
+                            Корзина
+                            <input type="checkbox" name="" id="" checked>
+                            <span class="fake-checkbox"></span>
+                        </label>
+                        <div class="download-file">
+                            <p>Презентация:</p>
+                            <label>
+                                Загрузить PDF
+                                <img src="./image/feather_log-out.svg" alt="download-icon">
+                                <input type="file" name="" id="">
+                            </label>
+                        </div>
+                        <div class="additional">
+                            <p> Дополнительные поля при входе: </p>
+                            <label>
+                                <input type="checkbox" name="surname" id="">
+                                <span class="additional__fake-checkbox"></span>
+                                Фамилия
+                            </label>
+                            <label>
+                                <input type="checkbox" name="city" id="">
+                                <span class="additional__fake-checkbox"></span>
+                                Город
+                            </label>
+                            <label>
+                                <input type="checkbox" name="email" id="">
+                                <span class="additional__fake-checkbox"></span>
+                                Email
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <button class="form__submit" type="submit">Сохранить</button>
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>Trade Broadcast 2022 ©</p> 
+    </f>
+</body>
+</html>
